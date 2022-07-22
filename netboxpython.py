@@ -7,7 +7,7 @@ r = requests.get(url, headers=headers, verify=False)
 jsondata = r.json()
 count = jsondata['count']
 i=0
-save_path = '/var/lib/awx/venv/'
+save_path = '/opt/netbox-zabbix/'
 file = os.path.join(save_path, "devices.yml")
 f = open(file, "w")
 type1 = 2
